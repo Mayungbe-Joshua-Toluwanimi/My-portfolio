@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
   <title>Mayungbe Joshua | Website Developer</title>
 </head>
 
@@ -20,11 +21,19 @@
   <nav class="">
     <div class="top">
       <span class="logo">Logo</span>
-      <button class="" id="btn-show-nav"><span class="material-symbols-outlined">
+      <button class="hide-on-lg" id="btn-show-nav"><span class="material-symbols-outlined">
           menu
         </span></button>
+      <ul class="show-on-lg nav-lg-screen">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <!-- <li></li> -->
+      </ul>
     </div>
-    <div class="side-nav" id="side-nav">
+    <div class="side-nav hide-on-lg" id="side-nav">
       <ul>
         <button id="btn-hide-nav"><span class="material-symbols-outlined">
             close
@@ -38,43 +47,67 @@
       </ul>
     </div>
   </nav>
+  <!-- <nav class="show-on-lg">
+    
+  </nav> -->
   <header class="container" id="home">
-    <div class="hero">
-      <h1>Websites That <span class="emphasize">Turn Visitors Into Customers</span></h1>
-      <p>High-performance websites built to earn trust, capture attention, and turn more of your visitors into paying
-        customers.</p>
-      <div class="cta-container">
-        <a href="#" class="cta primary-cta">Let's Chat</a>
-        <a href="#" class="cta secondary-cta">See My Works</a>
-      </div>
-      <img class="hero-img" src="images/hero-img4.jpeg" alt="">
-      <section class="trust">
-        <!--Change the class name later-->
-        <div class="avatars">
-          <img src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg" alt="">
-          <img src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg" alt="">
-          <img src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg" alt="">
-          <img src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg" alt="">
+    <div class="hero grid-container">
+      <div class="text">
+        <h1>Websites That <span class="emphasize">Turn Visitors Into Customers</span></h1>
+        <p>High-performance websites built to earn trust, capture attention, and turn more of your visitors into paying
+          customers.</p>
+        <section class="trust show-on-lg">
+          <!--Change the class name later-->
+          <div class="avatars">
+            <img src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg" alt="">
+            <img src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg" alt="">
+            <img src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg" alt="">
+            <img src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg" alt="">
+          </div>
+          <p>Trusted by <span class="emphasize">2+</span> startups, <br>businesses &amp; global brands</p>
+        </section>
+        <div class="cta-container">
+          <a href="#" class="cta primary-cta">Let's Chat</a>
+          <a href="#" class="cta secondary-cta">See My Works</a>
         </div>
-        <p>Trusted by <span class="emphasize">2+</span> <br>startups, <br>businesses &amp; global brands</p>
-      </section>
+      </div>
+      <div>
+        <img class="hero-img" src="images/hero-img4.jpeg" alt="">
+        <!-- <div style="display: block;"> -->
+        <section class="trust hide-on-lg">
+          <!--Change the class name later-->
+          <div class="avatars">
+            <img src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg" alt="">
+            <img src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg" alt="">
+            <img src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg" alt="">
+            <img src="images/jonathan-cooper-ViyA5myhBVw-unsplash.jpg" alt="">
+          </div>
+          <p>Trusted by <span class="emphasize">2+</span> startups, <br>businesses &amp; global brands</p>
+        </section>
+        <!-- </div> -->
+      </div>
     </div>
   </header>
   <main>
     <section class="container" id="about">
       <h2>About Me</h2>
-      <div class="<!--grid-container-->">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quaerat autem debitis adipisci labore
-          explicabo excepturi obcaecati repudiandae magni deleniti. Aliquam officia quos eligendi quis enim tempore
-          perferendis nisi atque?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quaerat autem debitis adipisci labore
-          explicabo excepturi obcaecati repudiandae magni deleniti. Aliquam officia quos eligendi quis enim tempore
-          perferendis nisi atque?</p>
-        <div class="cta-container">
-          <a href="#" class="cta primary-cta">Let's Chat</a>
-          <a href="#" class="cta secondary-cta">See More</a>
+      <div class="grid-container">
+        <div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quaerat autem debitis adipisci labore
+            explicabo excepturi obcaecati repudiandae magni deleniti. Aliquam officia quos eligendi quis enim tempore
+            perferendis nisi atque?</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quaerat autem debitis adipisci labore
+            explicabo excepturi obcaecati repudiandae magni deleniti. Aliquam officia quos eligendi quis enim tempore
+            perferendis nisi atque?</p>
         </div>
+        <div>
+        </div>
+
         <!-- <img src="" alt=""> -->
+      </div>
+      <div class="cta-container">
+        <a href="#" class="cta primary-cta">Let's Chat</a>
+        <a href="#" class="cta secondary-cta">See More</a>
       </div>
     </section>
     <section class="container" id="projects">
@@ -114,13 +147,13 @@
       <div class="attention">
         <p>Whether you want to build a credible online presence, improve the conversion rate of your website or build a
           landing page, I can help. </p>
-          <a href="#" class="cta primary-cta">Work With Me</a>
+        <a href="#" class="cta primary-cta">Work With Me</a>
       </div>
     </section>
 
     <section id="testimonials" class="container">
       <h2>What My Clients Say</h2>
-      <div class="testimonials grid-container">
+      <div class="testimonials grid-container" style="border: 1px solid black;">
         <div class="card testimony">
           <div>
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, quae et eius recusandae repudiandae doloribus
@@ -144,7 +177,7 @@
       <!-- <div class="contact-btns"> -->
       <a href="tel:+2347015634475" class="cta primary-cta">Let's Chat on Whatsapp</a>
       <!--Change the link to whatsapp-->
-      <a href="mailto:joshuatoluwanimi58@gmail.com" class="cta secondary-cta">Email Me</a>
+      <a href="mailto:joshuatoluwanimi58@gmail.com" class="cta secondary-cta">Send an Email</a>
 
       <!-- </div> -->
       <div class="social-icons">
@@ -155,7 +188,7 @@
       </div>
     </section>
   </main>
-  <footer class="container">
+  <footer>
     <section id="copyright">
       &copy; 2026 Mayugbe Joshua - Conversion Focused Landing Page Developer
     </section>

@@ -1,3 +1,119 @@
 @media(min-width: 768px) {
-  
+  :root {
+    --padding-container: 2rem 2.5rem;
+  }
+  .show-on-lg {
+    display: block;
+  }
+  .hide-on-lg {
+    display: none;
+  }
+  ul.nav-lg-screen {
+    /* justify-content: center; */
+    gap: 1.5rem;
+  }
+  h2 {
+    text-align: center;
+  }
+  body {
+    font-size: 1.2rem;
+  }
+  .hero {
+    margin-top: 9rem;
+    /* border: 1px solid; */
+  }
+  .hero .text {
+    display: flexbox;
+    align-self: flex-end;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.8rem;
+  }
+  nav .top {
+    padding: 1.2rem 2rem;
+    margin: 1.5rem 1.8rem 0;
+  }
+  .cta {
+    display: inline-flex;
+    padding: 10px 2rem;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* font-weight: bold; */
+    /* border-radius: 1rem; */
+    /* font-size: 1.2rem; */
+    margin: 0 5px 0 0;
+    /* margin: 15px; */
+    /* cursor: pointer; */
+    transition: transform 200ms ease-in, box-shadow 200ms ease;
+    
+    /* color: wh; */
+  }
+  /* .cta-container {
+    margin: 2rem 0;
+  } */
+  /* nav.hide-on-lg {
+    display: none;
+  } */
+  #projects .attention {
+    background: initial;
+    color: initial;
+    border-radius: none;
+    box-shadow: none;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .project-card .secondary-cta {
+    display: flex;
+    width: 100%;
+  }
+  .attention .primary-cta {
+    background: var( --color-primary);
+    color: #fff;
+    margin-top: 1rem;
+  }
+  /* #testimonials .testimony {
+    margin: auto;
+  } */
+  .social-icons {
+    /* border: 1px solid; */
+    /* display: flex; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    justify-content: left;
+    gap: 1.3rem;
+  }
+  footer {
+    padding: 2rem;
+  }
 } 
+@media(min-width: 1024px) {
+  :root {
+    --padding-container: 3rem 5.5rem;
+  }
+  body {
+    font-size: 1.3rem;
+  }
+  nav .top {
+    padding: 1.5rem 3rem;
+    margin: 2.5rem 4.5rem 0;
+  }
+  ul.nav-lg-screen {
+    /* justify-content: center; */
+    gap: 2rem;
+  }
+  .hero {
+    margin-top: 9rem;
+    border: 1px solid;
+    /* border: 1px solid; */
+  }
+}
+@media (max-width: 768px) {
+  .show-on-lg {
+    display: none;
+  }
+  ul.show-on-lg {
+    display: none;
+  }
+}
